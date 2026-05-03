@@ -6,14 +6,13 @@
 
 body {
     font-family: "Century Gothic", Arial, sans-serif;
-    background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* fondo con color */
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Contenedor tipo hoja */
 .contenedor {
     width: 90%;
     max-width: 650px;
@@ -23,7 +22,6 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Encabezado */
 .encabezado {
     text-align: center;
     margin-bottom: 15px;
@@ -40,7 +38,30 @@ body {
     margin-top: 5px;
 }
 
-/* Botón */
+/* Caja de texto */
+.entrada {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.entrada label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.entrada input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #1e3a8a;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Century Gothic", Arial, sans-serif;
+}
+
 .btn {
     display: block;
     margin: 15px auto;
@@ -57,7 +78,6 @@ body {
     background: #142c6e;
 }
 
-/* Títulos */
 h1 {
     text-align: center;
     color: #1e3a8a;
@@ -71,28 +91,21 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* Tabla */
-.tabla {
-    margin-top: 10px;
-}
-
-.fila {
+.item {
     padding: 14px;
     text-align: center;
     font-size: 18px;
     border-radius: 6px;
     margin-bottom: 8px;
-    background: #e0ecff; /* azul claro */
+    background: #e0ecff;
     transition: 0.3s;
 }
 
-/* Hover bonito */
-.fila:hover {
+.item:hover {
     background: #c7dbff;
     transform: scale(1.02);
 }
 
-/* Footer */
 footer {
     margin-top: 20px;
     text-align: right;
@@ -100,7 +113,6 @@ footer {
     color: #333;
 }
 
-/* 📱 Responsive */
 @media (max-width: 480px) {
     .contenedor {
         padding: 15px;
@@ -110,7 +122,11 @@ footer {
         font-size: 20px;
     }
 
-    .fila {
+    .item {
         font-size: 16px;
+    }
+
+    .entrada input {
+        width: 100%;
     }
 }

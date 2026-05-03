@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Century Gothic", Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* fondo con color */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor tipo hoja */
+.contenedor {
+    width: 90%;
+    max-width: 650px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.titulo-logo {
+    font-size: 30px;
+    color: #1e3a8a;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Botón */
+.btn {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 22px;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #142c6e;
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 26px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Tabla */
+.tabla {
+    margin-top: 10px;
+}
+
+.fila {
+    padding: 14px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background: #e0ecff; /* azul claro */
+    transition: 0.3s;
+}
+
+/* Hover bonito */
+.fila:hover {
+    background: #c7dbff;
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .fila {
+        font-size: 16px;
+    }
+}

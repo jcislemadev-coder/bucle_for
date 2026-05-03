@@ -1,132 +1,120 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* FUENTE Y BASE */
 body {
     font-family: "Century Gothic", Arial, sans-serif;
-    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* CONTENEDOR */
 .contenedor {
-    width: 90%;
-    max-width: 650px;
+    width: 95%;
+    max-width: 600px;
     background: #ffffff;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-.encabezado {
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     text-align: center;
-    margin-bottom: 15px;
 }
 
+/* LOGO */
 .logo {
-    max-width: 300px;
+    max-width: 180px;
 }
 
+/* TITULO */
 .titulo-logo {
-    font-size: 30px;
-    color: #1e3a8a;
-    font-weight: bold;
+    font-size: 22px;
+    margin-top: 5px;
+    background: linear-gradient(90deg, #d946ef, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* INSTRUCCIONES */
+.instrucciones {
+    background: #eef2ff;
+    border-left: 5px solid #7c3aed;
+    padding: 10px;
+    margin: 15px 0;
+    text-align: left;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* INPUT */
+.grupo-input input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #3b82f6;
+    font-size: 16px;
     margin-top: 5px;
 }
 
-/* Caja de texto */
-.entrada {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.entrada label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 18px;
-    color: #1e3a8a;
-    font-weight: bold;
-}
-
-.entrada input {
-    width: 200px;
-    padding: 10px;
-    border: 2px solid #1e3a8a;
-    border-radius: 6px;
-    font-size: 18px;
-    text-align: center;
-    font-family: "Century Gothic", Arial, sans-serif;
-}
-
+/* 🔥 BOTÓN ESTILO LOGO */
 .btn {
-    display: block;
-    margin: 15px auto;
-    padding: 12px 22px;
-    background: #1e3a8a;
-    color: white;
+    margin: 20px auto;
+    padding: 14px;
+    width: 100%;
+    max-width: 260px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: bold;
+    color: white;
     cursor: pointer;
+
+    /* GRADIENTE IGUAL A TU MARCA */
+    background: linear-gradient(90deg, #d946ef, #7c3aed, #3b82f6);
+
+    transition: all 0.3s ease;
 }
 
+/* HOVER */
 .btn:hover {
-    background: #142c6e;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(124,58,237,0.4);
 }
 
-h1 {
-    text-align: center;
-    color: #1e3a8a;
-    font-size: 26px;
+/* CLICK */
+.btn:active {
+    transform: scale(0.97);
 }
 
-.subtitulo {
-    text-align: center;
-    font-size: 16px;
-    color: #444;
-    margin-bottom: 15px;
+/* RESULTADOS */
+#idcontenedor {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .item {
-    padding: 14px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 6px;
-    margin-bottom: 8px;
     background: #e0ecff;
-    transition: 0.3s;
+    padding: 10px;
+    border-radius: 6px;
 }
 
-.item:hover {
-    background: #c7dbff;
-    transform: scale(1.02);
-}
-
-footer {
-    margin-top: 20px;
-    text-align: right;
-    font-size: 14px;
-    color: #333;
-}
-
+/* 📱 RESPONSIVE */
 @media (max-width: 480px) {
+
+    body {
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 140px;
+    }
+
+    .titulo-logo {
+        font-size: 18px;
+    }
+
     .contenedor {
         padding: 15px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .item {
-        font-size: 16px;
-    }
-
-    .entrada input {
-        width: 100%;
     }
 }
